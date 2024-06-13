@@ -1,0 +1,53 @@
+.signup{
+   position: absolute;
+   top: -30%;
+   right:50%;
+   width:400px;
+   padding: 30px;
+   box-sizing: border-box;
+   transform: translate(50%, 50%);
+   background-color:rgb(0,0,0,.5);
+   box-shadow: 0, 10px, 30px, rgb(0,0,rgb(0,0,0,.5)) ;
+   border-radius: 10px;
+}
+
+.signup h1{
+    text-align: center;
+    margin: 0 0 20px;
+    color: rgb(251, 251, 129);
+}
+
+.signup .box{
+    position: relative;
+}
+
+.signup .box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.signup .box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.signup .box input:focus~label,
+.signup .box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
